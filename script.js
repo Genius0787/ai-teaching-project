@@ -1,10 +1,45 @@
 // Flashcard content
 const flashcards = [
-  { question: "What is Artificial Intelligence?", answer: "AI is the simulation of human intelligence in machines." },
-  { question: "Name one AI tool used in education.", answer: "ChatGPT is a popular AI tool for education." },
-  { question: "How does AI help teachers?", answer: "It can automate grading, create content, and personalize learning." },
-  { question: "What is Elicit used for?", answer: "Elicit is used for AI-assisted research and literature review." },
-  { question: "What is an exit ticket in teaching?", answer: "A short activity to reflect on what students learned in class." }
+ {
+    question: "What is solar energy?",
+    answer: "Solar energy is the energy from the sun that is converted into thermal or electrical energy."
+  },
+  {
+    question: "What is the photoelectric effect?",
+    answer: "The emission of electrons from a material when light shines on it—it's the basis of solar cells."
+  },
+  {
+    question: "What is a photovoltaic (PV) cell?",
+    answer: "A PV cell converts sunlight directly into electricity using the photovoltaic effect."
+  },
+  {
+    question: "What materials are used in solar cells?",
+    answer: "Silicon, perovskites, and thin-film semiconductors like cadmium telluride (CdTe)."
+  },
+  {
+    question: "What is solar thermal energy?",
+    answer: "It involves capturing heat from sunlight and using it for heating or to produce electricity."
+  },
+  {
+    question: "What is a smart grid?",
+    answer: "A smart grid integrates renewable energy sources and allows for automated, real-time energy management."
+  },
+  {
+    question: "Name a key advantage of solar energy.",
+    answer: "It’s renewable, abundant, and has a low carbon footprint."
+  },
+  {
+    question: "What limits the efficiency of solar panels?",
+    answer: "Material limitations, sunlight angle, dust, temperature, and weather conditions."
+  },
+  {
+    question: "What is net metering?",
+    answer: "A billing system that credits solar panel owners for the electricity they add to the grid."
+  },
+  {
+    question: "What are solar applications beyond electricity?",
+    answer: "Water heating, desalination, cooking, lighting, and powering remote sensors."
+  }
 ];
 
 let currentIndex = 0;
