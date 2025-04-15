@@ -1,61 +1,61 @@
-// Flashcard content
 const flashcards = [
- {
+  {
     question: "What is solar energy?",
-    answer: "Solar energy is the energy from the sun that is converted into thermal or electrical energy."
+    answer: "Energy from the sun converted into thermal or electrical power."
   },
   {
     question: "What is the photoelectric effect?",
-    answer: "The emission of electrons from a material when light shines on it—it's the basis of solar cells."
+    answer: "Emission of electrons from material when light hits it."
   },
   {
-    question: "What is a photovoltaic (PV) cell?",
-    answer: "A PV cell converts sunlight directly into electricity using the photovoltaic effect."
+    question: "What is a photovoltaic cell?",
+    answer: "Device that converts sunlight into electricity."
   },
   {
-    question: "What materials are used in solar cells?",
-    answer: "Silicon, perovskites, and thin-film semiconductors like cadmium telluride (CdTe)."
-  },
-  {
-    question: "What is solar thermal energy?",
-    answer: "It involves capturing heat from sunlight and using it for heating or to produce electricity."
-  },
-  {
-    question: "What is a smart grid?",
-    answer: "A smart grid integrates renewable energy sources and allows for automated, real-time energy management."
-  },
-  {
-    question: "Name a key advantage of solar energy.",
-    answer: "It’s renewable, abundant, and has a low carbon footprint."
-  },
-  {
-    question: "What limits the efficiency of solar panels?",
-    answer: "Material limitations, sunlight angle, dust, temperature, and weather conditions."
+    question: "What are solar panels made of?",
+    answer: "Mostly silicon-based semiconductor materials."
   },
   {
     question: "What is net metering?",
-    answer: "A billing system that credits solar panel owners for the electricity they add to the grid."
+    answer: "System that credits solar users for energy fed to the grid."
   },
   {
-    question: "What are solar applications beyond electricity?",
-    answer: "Water heating, desalination, cooking, lighting, and powering remote sensors."
+    question: "What limits solar panel efficiency?",
+    answer: "Weather, dust, angle, material properties."
+  },
+  {
+    question: "What is solar thermal energy?",
+    answer: "Use of sunlight to produce heat."
+  },
+  {
+    question: "What are smart grids?",
+    answer: "Modern grids integrating renewable sources and digital tech."
+  },
+  {
+    question: "Name one application of solar energy.",
+    answer: "Water heating, desalination, or powering sensors."
+  },
+  {
+    question: "Why is solar energy sustainable?",
+    answer: "It’s renewable, abundant, and non-polluting."
   }
 ];
 
-let currentIndex = 0;
-const container = document.getElementById("card-container");
+function renderFlashcards() {
+  const container = document.querySelector('.flashcard-container');
+  container.innerHTML = '';
 
-function nextCard() {
-  const card = flashcards[currentIndex];
-  container.innerHTML = `
-    <div style="padding: 20px; background: #f0f8ff; border-radius: 10px;">
-      <strong>Q:</strong> ${card.question}<br><br>
-      <em>Answer:</em> ${card.answer}
-    </div>
-  `;
-  currentIndex = (currentIndex + 1) % flashcards.length;
+  flashcards.forEach(card => {
+    const cardHTML = `
+      <div class="flashcard">
+        <div class="flashcard-inner">
+          <div class="flashcard-front">${card.question}</div>
+          <div class="flashcard-back">${card.answer}</div>
+        </div>
+      </div>
+    `;
+    container.insertAdjacentHTML('beforeend', cardHTML);
+  });
 }
 
-// Show the first flashcard on load
-document.addEventListener("DOMContentLoaded", nextCard);
-
+document.addEventListener('DOMContentLoaded', renderFlashcards);
