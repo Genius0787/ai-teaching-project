@@ -1,21 +1,21 @@
-/* Updated Theme Colors */
+/* Solar Energy Theme Colors */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f4f8;
-  color: #2c3e50;
+  background-color: #f0f8f5; /* light background */
+  color: #2c3e50; /* dark gray for text */
 }
 
 header {
-  background-color: #4a90e2;
+  background-color: #f39c12; /* Sun-like yellow */
   color: white;
   padding: 30px 0;
   text-align: center;
 }
 
 nav {
-  background: #dbe9f4;
+  background: #27ae60; /* Solar green */
   padding: 12px;
   text-align: center;
 }
@@ -23,7 +23,7 @@ nav {
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #34495e;
+  color: white;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -37,13 +37,13 @@ section {
 }
 
 h2 {
-  color: #4a90e2;
+  color: #f39c12; /* Sun yellow */
 }
 
 button {
   margin-top: 10px;
   padding: 10px 16px;
-  background-color: #4a90e2;
+  background-color: #27ae60; /* Solar green */
   color: white;
   border: none;
   border-radius: 5px;
@@ -52,7 +52,7 @@ button {
 }
 
 button:hover {
-  background-color: #357ab8;
+  background-color: #2ecc71; /* Lighter green */
 }
 
 img {
@@ -62,7 +62,7 @@ img {
 }
 
 footer {
-  background-color: #dfe6ec;
+  background-color: #ecf0f1; /* Light gray background */
   text-align: center;
   padding: 20px;
   font-size: 0.9em;
