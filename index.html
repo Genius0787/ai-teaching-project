@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI-Enhanced Teaching Project</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>AI-Enhanced Teaching Project</h1>
+  </header>
 
+  <nav>
+    <a href="#flashcards">Flash Cards</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#exit-ticket">Exit Ticket</a>
+    <a href="#podcast">Podcast</a>
+    <a href="#gallery">Image Gallery</a>
+    <a href="#mapping">Literature Mapping</a>
+    <a href="#ai-story">AI in My Teaching</a>
+    <a href="#chatbot">Ask AI</a>
+  </nav>
+
+  <section id="flashcards">
+    <h2>Flash Card Deck</h2>
+    <div id="card-container"></div>
+    <button onclick="nextCard()">Next Card</button>
+  </section>
+
+  <section id="quiz">
+    <h2>Quiz</h2>
+    <p>1. What is AI in Education?</p>
+    <button onclick="alert('Correct!')">A tool to personalize learning ✅</button>
+    <button onclick="alert('Try again')">A way to avoid teaching ❌</button>
+  </section>
+
+  <section id="exit-ticket">
+    <h2>Exit Ticket Summary</h2>
+    <textarea rows="4" cols="50" placeholder="Write your learning takeaway..."></textarea>
+    <button onclick="alert('Saved!')">Submit</button>
+  </section>
+
+  <section id="podcast">
+    <h2>Lesson Podcast</h2>
+    <audio controls>
+      <source src="podcast.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+  </section>
+
+  <section id="gallery">
+    <h2>Image Gallery</h2>
+    <img src="images/ai1.jpg" alt="AI Concept" />
+    <img src="images/ai2.jpg" alt="Teaching with AI" />
+  </section>
+
+  <section id="mapping">
+    <h2>Literature Mapping</h2>
+    <img src="images/litmap.png" alt="Literature Map" />
+    <p>This map visualizes key research clusters around AI in Education.</p>
+  </section>
+
+  <section id="ai-story">
+    <h2>How AI Transformed My Teaching</h2>
+    <p>Integrating AI tools like ChatGPT and Elicit has revolutionized how I teach. From creating dynamic flashcards to automating quizzes and generating personalized student feedback—AI now supports me in creating engaging, inclusive classrooms. It hasn’t replaced me—it empowers me.</p>
+  </section>
+
+  <section id="chatbot">
+    <h2>Ask AI</h2>
+    <iframe
+      src="https://www.chatbase.co/chatbot-iframe/YOUR_BOT_ID"
+      width="100%" height="500px" frameborder="0">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>Project by Faculty Development Participant</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
