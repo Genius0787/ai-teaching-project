@@ -241,3 +241,16 @@ footer {
 .gallery img:hover {
   transform: scale(1.05);
 }
+<style>
+  #chatbot {
+    margin: 20px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #chatbot iframe {
+    border-radius: 8px;
+  }
+</style>
