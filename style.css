@@ -19,7 +19,30 @@ nav {
   padding: 12px;
   text-align: center;
 }
+#literature-mapping {
+  padding: 50px 30px;
+  background-color: #fffbe6;
+  border-radius: 10px;
+  margin-top: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
 
+#literature-mapping h2 {
+  color: #1a4e6c;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#literature-mapping h3, #literature-mapping h4 {
+  color: #2a2a2a;
+  margin-top: 25px;
+}
+
+#literature-mapping ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-top: 20px;
+}
 nav a {
   margin: 0 15px;
   text-decoration: none;
